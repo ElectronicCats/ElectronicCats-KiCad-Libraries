@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CNT-RJ45
+D  RJ-45 with LEDs and shield
+K connector rj45 ethernet network
+$ENDCMP
+#
+$CMP CNT-RJ45_Wurth
+D  RJ-45 with LEDs and shield Wurth
+K connector rj45 ethernet network Wurth
+$ENDCMP
+#
+#End Doc Library
