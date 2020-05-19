@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AOZ102AI
+D 300mA, Micropower, Ultra-Low-Dropout, Low-Noise Adjustable CMOS Regulator, WSON-8
+K adjustable linear regulator
+F http://www.ti.com/lit/ds/symlink/lp3982.pdf
+$ENDCMP
+#
 $CMP ATSAMD21E18A
 F https://www.mouser.mx/datasheet/2/268/SAM-D21-Family-Datasheet-DS40001882C-1381353.pdf
 $ENDCMP
@@ -12,6 +18,24 @@ $ENDCMP
 $CMP CNT-RJ45_Wurth
 D  RJ-45 with LEDs and shield Wurth
 K connector rj45 ethernet network Wurth
+$ENDCMP
+#
+$CMP NCP361SNT1G
+D High Accuracy Ultralow IQ, 500mA anyCAP Adjustable Low Dropout Regulator, MSOP-8
+K linear regulator ldo adjustable positive
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3336.pdf
+$ENDCMP
+#
+$CMP TPS2501DRC
+D Integrated USB power Switch with Boost Converter, Constant Frequency, Texas S-PVSON-10
+K USB switch boost
+F http://www.ti.com/lit/ds/symlink/tps2500.pdf
+$ENDCMP
+#
+$CMP TPS2556DRBT
+D Integrated USB power Switch with Boost Converter, High-Efficiency Eco-mode Control Scheme, Texas S-PVSON-10
+K USB switch boost
+F http://www.ti.com/lit/ds/symlink/tps2500.pdf
 $ENDCMP
 #
 #End Doc Library
