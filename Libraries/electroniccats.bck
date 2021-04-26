@@ -26,6 +26,10 @@ K linear regulator ldo adjustable positive
 F https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3336.pdf
 $ENDCMP
 #
+$CMP RFSW8006QTR7
+F https://www.mouser.mx/datasheet/2/412/fsw8006q_product_data_sheet-1307843.pdf
+$ENDCMP
+#
 $CMP TPS2501DRC
 D Integrated USB power Switch with Boost Converter, Constant Frequency, Texas S-PVSON-10
 K USB switch boost
