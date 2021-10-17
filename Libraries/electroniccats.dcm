@@ -30,6 +30,12 @@ $CMP RFSW8006QTR7
 F https://www.mouser.mx/datasheet/2/412/fsw8006q_product_data_sheet-1307843.pdf
 $ENDCMP
 #
+$CMP SLS32AIA010MK
+D Cryptographic Co-Processor with Secure Hardware-based 16 Key Storage, ECDSA and ECDH support, I2C, SOIC-8
+K Cryptographic coprocessor
+F http://ww1.microchip.com/downloads/en/DeviceDoc/ATECC608A-CryptoAuthentication-Device-Summary-Data-Sheet-DS40001977B.pdf
+$ENDCMP
+#
 $CMP TPS2501DRC
 D Integrated USB power Switch with Boost Converter, Constant Frequency, Texas S-PVSON-10
 K USB switch boost
