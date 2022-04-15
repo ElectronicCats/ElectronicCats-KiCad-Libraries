@@ -92,12 +92,12 @@ compfields = net.gatherComponentFieldUnion(components)
 partfields = net.gatherLibPartFieldUnion()
 
 # remove Reference, Value, Datasheet, and Footprint, they will come from 'columns' below
-partfields -= set( ['Reference', 'Value', 'Datasheet'] )
+partfields -= set( ['Reference', 'Value'] )
 
 columnset = compfields #| partfields     # union
 
 # prepend an initial 'hard coded' list and put the enchillada into list 'columns'
-columns = ['Item', 'Qty', 'Reference(s)', 'Value', 'Datasheet'] + sorted(list(columnset))
+columns = ['Item', 'Qty', 'Reference(s)', 'Value'] + sorted(list(columnset))
 
 # Create a new csv writer object to use as the output formatter
 out = csv.writer( f, lineterminator='\n', delimiter=',', quotechar='\"', quoting=csv.QUOTE_ALL )
@@ -179,10 +179,10 @@ for group in grouped:
     row.append( c.getValue() )
     #row.append( c.getLibName() + ":" + c.getPartName() )
     #row.append( net.getGroupFootprint(group) )
-    row.append( net.getGroupDatasheet(group) )
+    #row.append( net.getGroupDatasheet(group) )
 
     # from column 5 upwards, use the fieldnames to grab the data
-    for field in columns[5:]:
+    for field in columns[4:]:
         row.append( net.getGroupField(group, field) );
 
     writerow( out, row  )
